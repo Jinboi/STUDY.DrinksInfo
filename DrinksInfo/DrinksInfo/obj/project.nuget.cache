@@ -1,14 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "RTgOv5h2pgtDkNpr4IjzXwlBf13CSvA0yWAndBjljI5n7YHzRjlseBMI3kg3BxT/LGWCViPwYGVhurBOhzn9gQ==",
+  "dgSpecHash": "A7j2QjwF6cMtDCZnq4NQyv1Z5ArdCY3eeQi47vZu/xjf1xfxuqqkEQl46cRJi6u3jFQVCSXWvUCMXWdvosT40Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\yjin\\OneDrive - soprema\\Documents\\MEGA\\WIP\\02-GitWIP\\STUDY.DrinksInfo\\DrinksInfo\\DrinksInfo\\DrinksInfo.csproj",
+  "projectFilePath": "C:\\MEGA\\WIP\\02-GitWIP\\STUDY.DrinksInfo\\DrinksInfo\\DrinksInfo\\DrinksInfo.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\yjin\\.nuget\\packages\\consoletableext\\3.2.0\\consoletableext.3.2.0.nupkg.sha512",
-    "C:\\Users\\yjin\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
-    "C:\\Users\\yjin\\.nuget\\packages\\restsharp\\110.2.0\\restsharp.110.2.0.nupkg.sha512",
-    "C:\\Users\\yjin\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
-    "C:\\Users\\yjin\\.nuget\\packages\\system.text.json\\7.0.2\\system.text.json.7.0.2.nupkg.sha512"
+    "C:\\Users\\duddn\\.nuget\\packages\\consoletableext\\3.2.0\\consoletableext.3.2.0.nupkg.sha512",
+    "C:\\Users\\duddn\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\duddn\\.nuget\\packages\\restsharp\\110.2.0\\restsharp.110.2.0.nupkg.sha512",
+    "C:\\Users\\duddn\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
+    "C:\\Users\\duddn\\.nuget\\packages\\system.text.json\\7.0.2\\system.text.json.7.0.2.nupkg.sha512"
   ],
   "logs": []
 }

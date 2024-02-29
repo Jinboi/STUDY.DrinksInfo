@@ -18,3 +18,23 @@ C:\Users\yjin\OneDrive - soprema\Documents\MEGA\WIP\02-GitWIP\STUDY.DrinksInfo\D
 C:\Users\yjin\OneDrive - soprema\Documents\MEGA\WIP\02-GitWIP\STUDY.DrinksInfo\DrinksInfo\DrinksInfo\obj\Debug\net8.0\DrinksInfo.pdb
 C:\Users\yjin\OneDrive - soprema\Documents\MEGA\WIP\02-GitWIP\STUDY.DrinksInfo\DrinksInfo\DrinksInfo\obj\Debug\net8.0\DrinksInfo.genruntimeconfig.cache
 C:\Users\yjin\OneDrive - soprema\Documents\MEGA\WIP\02-GitWIP\STUDY.DrinksInfo\DrinksInfo\DrinksInfo\obj\Debug\net8.0\ref\DrinksInfo.dll
+C:\MEGA\WIP\02-GitWIP\STUDY.DrinksInfo\DrinksInfo\DrinksInfo\bin\Debug\net8.0\DrinksInfo.exe
+C:\MEGA\WIP\02-GitWIP\STUDY.DrinksInfo\DrinksInfo\DrinksInfo\bin\Debug\net8.0\DrinksInfo.deps.json
+C:\MEGA\WIP\02-GitWIP\STUDY.DrinksInfo\DrinksInfo\DrinksInfo\bin\Debug\net8.0\DrinksInfo.runtimeconfig.json
+C:\MEGA\WIP\02-GitWIP\STUDY.DrinksInfo\DrinksInfo\DrinksInfo\bin\Debug\net8.0\DrinksInfo.dll
+C:\MEGA\WIP\02-GitWIP\STUDY.DrinksInfo\DrinksInfo\DrinksInfo\bin\Debug\net8.0\DrinksInfo.pdb
+C:\MEGA\WIP\02-GitWIP\STUDY.DrinksInfo\DrinksInfo\DrinksInfo\bin\Debug\net8.0\ConsoleTableExt.dll
+C:\MEGA\WIP\02-GitWIP\STUDY.DrinksInfo\DrinksInfo\DrinksInfo\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\MEGA\WIP\02-GitWIP\STUDY.DrinksInfo\DrinksInfo\DrinksInfo\bin\Debug\net8.0\RestSharp.dll
+C:\MEGA\WIP\02-GitWIP\STUDY.DrinksInfo\DrinksInfo\DrinksInfo\obj\Debug\net8.0\DrinksInfo.csproj.AssemblyReference.cache
+C:\MEGA\WIP\02-GitWIP\STUDY.DrinksInfo\DrinksInfo\DrinksInfo\obj\Debug\net8.0\DrinksInfo.GeneratedMSBuildEditorConfig.editorconfig
+C:\MEGA\WIP\02-GitWIP\STUDY.DrinksInfo\DrinksInfo\DrinksInfo\obj\Debug\net8.0\DrinksInfo.AssemblyInfoInputs.cache
+C:\MEGA\WIP\02-GitWIP\STUDY.DrinksInfo\DrinksInfo\DrinksInfo\obj\Debug\net8.0\DrinksInfo.AssemblyInfo.cs
+C:\MEGA\WIP\02-GitWIP\STUDY.DrinksInfo\DrinksInfo\DrinksInfo\obj\Debug\net8.0\DrinksInfo.csproj.CoreCompileInputs.cache
+C:\MEGA\WIP\02-GitWIP\STUDY.DrinksInfo\DrinksInfo\DrinksInfo\obj\Debug\net8.0\DrinksInfo.sourcelink.json
+C:\MEGA\WIP\02-GitWIP\STUDY.DrinksInfo\DrinksInfo\DrinksInfo\obj\Debug\net8.0\DrinksInfo.csproj.CopyComplete
+C:\MEGA\WIP\02-GitWIP\STUDY.DrinksInfo\DrinksInfo\DrinksInfo\obj\Debug\net8.0\DrinksInfo.dll
+C:\MEGA\WIP\02-GitWIP\STUDY.DrinksInfo\DrinksInfo\DrinksInfo\obj\Debug\net8.0\refint\DrinksInfo.dll
+C:\MEGA\WIP\02-GitWIP\STUDY.DrinksInfo\DrinksInfo\DrinksInfo\obj\Debug\net8.0\DrinksInfo.pdb
+C:\MEGA\WIP\02-GitWIP\STUDY.DrinksInfo\DrinksInfo\DrinksInfo\obj\Debug\net8.0\DrinksInfo.genruntimeconfig.cache
+C:\MEGA\WIP\02-GitWIP\STUDY.DrinksInfo\DrinksInfo\DrinksInfo\obj\Debug\net8.0\ref\DrinksInfo.dll
