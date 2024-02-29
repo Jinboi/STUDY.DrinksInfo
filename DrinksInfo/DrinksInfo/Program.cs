@@ -1,2 +1,13 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿
+namespace DrinksInfo
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            UserInput userInput = new();
+            userInput.GetCategoriesInput();
+
+        }
+    }
+}
