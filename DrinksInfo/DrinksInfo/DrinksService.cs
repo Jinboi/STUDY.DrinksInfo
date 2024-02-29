@@ -27,7 +27,7 @@ namespace DrinksInfo
             }
             return categories;
         }
-        public static List<Drink> GetDrinksByCategory(string category)
+        internal List<Drink> GetDrinksByCategory(string category)
         {
             var client = new RestClient("http://www.thecocktaildb.com/api/json/v1/1");
             var request = new RestRequest($"filter.php?c={HttpUtility.UrlEncode(category)}");
@@ -42,9 +42,9 @@ namespace DrinksInfo
 
                 var serialize = JsonConvert.DeserializeObject<Drinks>(rawResponse);
 
-                List<Drink> returnedList = serialize.DrinksList;
+                drinks = serialize.DrinksList;
 
-                TableVisualizationEngine.ShowTable(returnedList, "Drinks Menu");
+                TableVisualizationEngine.ShowTable(drinks, "Drinks Menu");
 
                 return drinks;
             }

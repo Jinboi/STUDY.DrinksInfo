@@ -27,9 +27,9 @@
             GetDrinksInput(category);
         }
 
-        private void GetDrinksInput(string category)
+        internal void GetDrinksInput(string category)
         {
-            var drinks = DrinksService.GetDrinksByCategory(category);
+            var drinks = drinksService.GetDrinksByCategory(category);
 
             Console.WriteLine("Choose a drink or go back to category menu by typing 0:");
 
@@ -49,6 +49,7 @@
                 GetDrinksInput(category);
 
             }
+
             drinksService.GetDrink(drink);
 
             Console.Write("Press any key to go back");
