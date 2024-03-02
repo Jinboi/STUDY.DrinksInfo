@@ -7,7 +7,6 @@ public class Drinks
 
     public List<Drink> DrinksList { get; set; }
 }
-
 public class Drink
 {
     public string idDrink { get; set; }

@@ -1,13 +1,9 @@
-﻿
-namespace DrinksInfo
+﻿namespace DrinksInfo;
+class Program
 {
-    class Program
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            UserInput userInput = new();
-            userInput.GetCategoriesInput();
-
-        }
+        UserInput userInput = new();
+        userInput.GetCategoriesInput();
     }
 }

@@ -31,7 +31,6 @@ C:\MEGA\WIP\02-GitWIP\STUDY.DrinksInfo\DrinksInfo\DrinksInfo\obj\Debug\net8.0\Dr
 C:\MEGA\WIP\02-GitWIP\STUDY.DrinksInfo\DrinksInfo\DrinksInfo\obj\Debug\net8.0\DrinksInfo.AssemblyInfoInputs.cache
 C:\MEGA\WIP\02-GitWIP\STUDY.DrinksInfo\DrinksInfo\DrinksInfo\obj\Debug\net8.0\DrinksInfo.AssemblyInfo.cs
 C:\MEGA\WIP\02-GitWIP\STUDY.DrinksInfo\DrinksInfo\DrinksInfo\obj\Debug\net8.0\DrinksInfo.csproj.CoreCompileInputs.cache
-C:\MEGA\WIP\02-GitWIP\STUDY.DrinksInfo\DrinksInfo\DrinksInfo\obj\Debug\net8.0\DrinksInfo.sourcelink.json
 C:\MEGA\WIP\02-GitWIP\STUDY.DrinksInfo\DrinksInfo\DrinksInfo\obj\Debug\net8.0\DrinksInfo.csproj.CopyComplete
 C:\MEGA\WIP\02-GitWIP\STUDY.DrinksInfo\DrinksInfo\DrinksInfo\obj\Debug\net8.0\DrinksInfo.dll
 C:\MEGA\WIP\02-GitWIP\STUDY.DrinksInfo\DrinksInfo\DrinksInfo\obj\Debug\net8.0\refint\DrinksInfo.dll

@@ -4,98 +4,90 @@ using System.Web;
 using System.Reflection;
 using DrinksInfo.Models;
 
-namespace DrinksInfo
+namespace DrinksInfo;
+internal class DrinksService
 {
-    internal class DrinksService
+    public List<Category> GetCategories()
     {
-        public List<Category> GetCategories()
+        var client = new RestClient("http://www.thecocktaildb.com/api/json/v1/1/");
+        var request = new RestRequest("list.php?c=list");
+        var response = client.ExecuteAsync(request);
+
+        List<Category> categories = new();
+
+        if (response.Result.StatusCode == System.Net.HttpStatusCode.OK)
         {
-            var client = new RestClient("http://www.thecocktaildb.com/api/json/v1/1/");
-            var request = new RestRequest("list.php?c=list");
-            var response = client.ExecuteAsync(request);
+            string rawResponse = response.Result.Content;
+            var serialize = JsonConvert.DeserializeObject<Categories>(rawResponse);
 
-            List<Category> categories = new();
-
-            if (response.Result.StatusCode == System.Net.HttpStatusCode.OK)
-            {
-                string rawResponse = response.Result.Content;
-                var serialize = JsonConvert.DeserializeObject<Categories>(rawResponse);
-
-                categories = serialize.CategoriesList;
-                TableVisualizationEngine.ShowTable(categories, "Categories Menu");
-                return categories;
-            }
+            categories = serialize.CategoriesList;
+            TableVisualizationEngine.ShowTable(categories, "Categories Menu");
             return categories;
         }
-        internal List<Drink> GetDrinksByCategory(string category)
+        return categories;
+    }
+    internal List<Drink> GetDrinksByCategory(string category)
+    {
+        var client = new RestClient("http://www.thecocktaildb.com/api/json/v1/1");
+        var request = new RestRequest($"filter.php?c={HttpUtility.UrlEncode(category)}");
+        
+        var response = client.ExecuteAsync(request);
+
+        List<Drink> drinks = new();
+
+        if (response.Result.StatusCode == System.Net.HttpStatusCode.OK)
         {
-            var client = new RestClient("http://www.thecocktaildb.com/api/json/v1/1");
-            var request = new RestRequest($"filter.php?c={HttpUtility.UrlEncode(category)}");
-            
-            var response = client.ExecuteAsync(request);
+            string rawResponse = response.Result.Content;
 
-            List<Drink> drinks = new();
+            var serialize = JsonConvert.DeserializeObject<Drinks>(rawResponse);
 
-            if (response.Result.StatusCode == System.Net.HttpStatusCode.OK)
-            {
-                string rawResponse = response.Result.Content;
+            drinks = serialize.DrinksList;
 
-                var serialize = JsonConvert.DeserializeObject<Drinks>(rawResponse);
-
-                drinks = serialize.DrinksList;
-
-                TableVisualizationEngine.ShowTable(drinks, "Drinks Menu");
-
-                return drinks;
-            }
+            TableVisualizationEngine.ShowTable(drinks, "Drinks Menu");
 
             return drinks;
-
-
         }
 
-        internal void GetDrink(string drink)
+        return drinks;
+    }
+    internal void GetDrink(string drink)
+    {
+        var client = new RestClient("http://www.thecocktaildb.com/api/json/v1/1/");
+        var request = new RestRequest($"lookup.php?i={drink}");
+        var response = client.ExecuteAsync(request);
+
+        if (response.Result.StatusCode == System.Net.HttpStatusCode.OK)
         {
-            var client = new RestClient("http://www.thecocktaildb.com/api/json/v1/1/");
-            var request = new RestRequest($"lookup.php?i={drink}");
-            var response = client.ExecuteAsync(request);
+            string rawResponse = response.Result.Content;
 
-            if (response.Result.StatusCode == System.Net.HttpStatusCode.OK)
+            var serialize = JsonConvert.DeserializeObject<DrinkDetailObject>(rawResponse);
+
+            List<DrinkDetail> returnedList = serialize.DrinkDetailList;
+
+            DrinkDetail drinkDetail = returnedList[0];
+
+            List<object> prepList = new();
+
+            string formattedName = "";
+
+            foreach (PropertyInfo prop in drinkDetail.GetType().GetProperties())
             {
-                string rawResponse = response.Result.Content;
-
-                var serialize = JsonConvert.DeserializeObject<DrinkDetailObject>(rawResponse);
-
-                List<DrinkDetail> returnedList = serialize.DrinkDetailList;
-
-                DrinkDetail drinkDetail = returnedList[0];
-
-                List<object> prepList = new();
-
-                string formattedName = "";
-
-                foreach (PropertyInfo prop in drinkDetail.GetType().GetProperties())
+                if (prop.Name.Contains("str"))
                 {
-
-                    if (prop.Name.Contains("str"))
-                    {
-                        formattedName = prop.Name.Substring(3);
-                    }
-
-                    if (!string.IsNullOrEmpty(prop.GetValue(drinkDetail)?.ToString()))
-                    {
-                        prepList.Add(new
-                        {
-                            Key = formattedName,
-                            Value = prop.GetValue(drinkDetail)
-                        });
-                    }
+                    formattedName = prop.Name.Substring(3);
                 }
 
-                TableVisualizationEngine.ShowTable(prepList, drinkDetail.strDrink);
-
-
+                if (!string.IsNullOrEmpty(prop.GetValue(drinkDetail)?.ToString()))
+                {
+                    prepList.Add(new
+                    {
+                        Key = formattedName,
+                        Value = prop.GetValue(drinkDetail)
+                    });
+                }
             }
+
+            TableVisualizationEngine.ShowTable(prepList, drinkDetail.strDrink);
         }
     }
 }

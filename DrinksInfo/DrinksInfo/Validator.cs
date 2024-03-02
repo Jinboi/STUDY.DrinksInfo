@@ -1,36 +1,34 @@
-﻿namespace DrinksInfo
+﻿namespace DrinksInfo;
+public class Validator
 {
-    public class Validator
+    internal static bool IsStringValid(string stringInput)
     {
-        internal static bool IsStringValid(string stringInput)
+        if (String.IsNullOrEmpty(stringInput))
         {
-            if (String.IsNullOrEmpty(stringInput))
-            {
-                return false;
-            }
-
-            foreach (char c in stringInput)
-            {
-                if (!Char.IsLetter(c) && c != '/' && c != ' ')
-                    return false;
-            }
-
-            return true;
+            return false;
         }
-        public static bool IsIdValid(string stringInput)
+
+        foreach (char c in stringInput)
         {
-            if (String.IsNullOrEmpty(stringInput))
-            {
+            if (!Char.IsLetter(c) && c != '/' && c != ' ')
                 return false;
-            }
-
-            foreach (char c in stringInput)
-            {
-                if (!Char.IsDigit(c))
-                    return false;
-            }
-
-            return true;
         }
+
+        return true;
+    }
+    public static bool IsIdValid(string stringInput)
+    {
+        if (String.IsNullOrEmpty(stringInput))
+        {
+            return false;
+        }
+
+        foreach (char c in stringInput)
+        {
+            if (!Char.IsDigit(c))
+                return false;
+        }
+
+        return true;
     }
 }
